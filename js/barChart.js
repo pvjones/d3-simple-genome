@@ -12,7 +12,6 @@
             },
             link: function(scope, elem, attrs) {
 
-
                 var margins = {
                     top: 5,
                     left: 5,
@@ -163,7 +162,7 @@
                     name: 'chromosome23'
                 }]
 
-                var SNPVals = [48129895]
+                var SNPVals = [48129895, 88129895]
               
                 var dataset = dataset.map(function(d) {
                     return d.data.map(function(e, i) {
@@ -243,13 +242,18 @@
                     })
 
             
+                SNPVals.forEach(function(elem) {
 
-                svg.append('rect')
+                    svg.append('rect')
                     .attr('fill', 'red')
                     .attr('width', 3)
                     .attr('height', 40)
-                    .attr('x', xScale(SNPVals[0]))
+                    .attr('x', xScale(elem))
                     .attr('y', -5);
+
+                })
+                
+                
                
             } //end of link
         };
