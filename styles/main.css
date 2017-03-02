@@ -1,0 +1,24 @@
+.title {
+  height: 50px;
+  font-size: 30px;
+}
+
+.bar-chart-container {
+  height: 500px;
+  width: 500px;
+  background-color: #EFEFEF;
+}
+
+.bar-chart {
+  height: 500px;
+  width: 500px;
+  background-color: #EFEFEF;
+}
+
+.bar-chart rect {
+ 
+}
+
+.bar-chart text {
+
+}

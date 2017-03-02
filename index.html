@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+  <title>BoilerPlate</title>
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+  </head>
+<body ng-controller="mainController">
+
+  <div class="title">
+    {{barChart}}
+  </div>
+  <div>
+   Data = {{data}}
+  </div>
+  <div class="bar-chart-container">
+    <bar-chart data="data" class="bar-chart">
+    </bar-chart>
+  </div>
+  
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/mainController.js"></script>
+  <script src="./js/barChart.js"></script>
+  <script src="https://d3js.org/d3.v3.js"></script>
+</body>
+</html>
